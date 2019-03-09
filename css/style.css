@@ -1,0 +1,15 @@
+.container {
+	line-height: 0;
+	column-count: 6;
+	column-gap: 0;
+}
+
+img {
+	width: 100%;
+	width: 100%;
+    height: auto;
+}
+
+body {
+	margin: 0; padding: 0;
+}
