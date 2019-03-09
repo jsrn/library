@@ -1,7 +1,8 @@
 .container {
-	line-height: 0;
-	column-count: 6;
-	column-gap: 0;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 300px);
+	grid-gap: 10px;
+	justify-content: center;
 }
 
 img {
