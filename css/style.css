@@ -13,3 +13,7 @@ img {
 body {
 	margin: 0; padding: 0;
 }
+
+section.introduction {
+	min-height: 100vh;
+}
