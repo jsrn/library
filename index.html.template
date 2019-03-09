@@ -9,7 +9,25 @@
     <section class="introduction">
       <h1>My Library</h1>
 
-      <p>Welcome to my library.</p>
+      <p>Welcome to my library. I try to read a lot, but like many people who try to read a lot, I don't have room to keep everything, so I created this virtual library.</p>
+
+      <p>When I finish a book, I add the cover to this list so that even when I get rid of the physical copy, I can still look back and remember it.</p>
+
+      <h2>Technical Notes</h2>
+
+      <ul>
+        <li>The HTML is generated from a template and the folder full of book covers. I used the <a href="https://github.com/sdsykes/fastimage">fastimage</a> gem to get the cover dimensions so that the grid can be pre-sized for minimal jumping about.</li>
+        <li>I tried to keep the images small, but I used <a href="https://css-tricks.com/the-complete-guide-to-lazy-loading-images/">lazy loading</a> to ensure that images are only loaded when they come into the view port.
+      </ul>
+
+      <p>Scroll down to browse.</p>
+
+      <p class="down-arrow">
+        <svg width="198" height="198" viewBox="0 0 198 198" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="28.2843" y="70.7107" width="140" height="40" transform="rotate(45 28.2843 70.7107)" fill="#D1442F"/>
+        <rect x="197.99" y="98.9949" width="140" height="40" transform="rotate(135 197.99 98.9949)" fill="#D1442F"/>
+        </svg>
+      </p>
     </section>
 
     <div class="container">
@@ -27,8 +45,10 @@
               if (entry.isIntersecting) {
                 var image = entry.target;
                 image.src = image.dataset.src;
-                image.style.height = "auto";
-                image.style.width = "100%";
+                image.style.width = "100%;"
+                image.style.minWidth = "unset";
+                image.style.height = "auto;";
+                image.style.minHeight = "unset";
                 image.classList.remove("lazy");
                 imageObserver.unobserve(image);
               }

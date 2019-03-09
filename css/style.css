@@ -12,8 +12,31 @@ img {
 
 body {
 	margin: 0; padding: 0;
+	background: #ace8dc;
+	font-size: 20px;
+}
+
+h1 {
+	font-family: sans-serif;
 }
 
 section.introduction {
 	min-height: 100vh;
+	padding: 50px;
+	max-width: 35em;
+	margin: 0 auto;
+}
+
+.down-arrow {
+	text-align: center;
+	animation: bounce 2s linear infinite;
+	position: relative;
+}
+
+@keyframes bounce {
+	0% { top: 0;}
+	25% { top: -20px; }
+	50% { top: 0; }
+	75% { top: 20px; }
+	100% { top: 0; }
 }
