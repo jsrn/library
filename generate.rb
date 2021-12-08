@@ -6,7 +6,7 @@ COLOURS = %w(red green blue magenta)
 
 total_size = 0
 
-cover_list_html = Dir["covers/*"].map do |book|
+cover_list_html = Dir["covers/*"].sort.map do |book|
   width, height = FastImage.size(book)
   total_size += File.size(book)
 
