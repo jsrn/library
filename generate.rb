@@ -1,4 +1,5 @@
 require "fastimage"
+require "stringio"
 
 template = File.read("index.html.template")
 
