@@ -13,8 +13,12 @@ img {
 
 body {
 	margin: 0; padding: 0;
-	background: #ace8dc;
+	background: antiquewhite;
 	font-size: 20px;
+}
+
+blockquote {
+	font-style: italic;
 }
 
 h1 {
@@ -29,15 +33,6 @@ section.introduction {
 }
 
 .down-arrow {
+	font-size: 4em;
 	text-align: center;
-	animation: bounce 2s linear infinite;
-	position: relative;
-}
-
-@keyframes bounce {
-	0% { top: 0;}
-	25% { top: -20px; }
-	50% { top: 0; }
-	75% { top: 20px; }
-	100% { top: 0; }
 }
