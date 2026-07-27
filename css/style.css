@@ -37,3 +37,7 @@ section.introduction {
 	font-size: 4em;
 	text-align: center;
 }
+
+summary {
+	font-weight: bold;
+}
